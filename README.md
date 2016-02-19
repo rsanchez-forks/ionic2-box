@@ -1,5 +1,8 @@
 This is a fork of the original Ionic Box project, aimed at updating package versions and addressing various dependency issues.
 
+I addressed issues with the outdated NodeJS packages in the official mainline Ubuntu repos, as well as a few other issues. These were causing npm dependency problems during and after provisioning. Using VirtualBox as the provider, I tested this as capable of vagrant up, generating an app with the tabs template, serving it to the host machine, and packaging an Android build.
+
+
 
 Ionic Box
 =============================
@@ -39,13 +42,3 @@ sudo /home/vagrant/android-sdk-linux/platform-tools/adb kill-server
 sudo /home/vagrant/android-sdk-linux/platform-tools/adb start-server
 ```
 
-### Pre-built image
-
-We are testing a pre-built Vagrant cloud image which should be faster than using the Vagrantfile method above. To try it, create a folder where you want to init your dev environment (a great place for this would be in the project folder of your app). Then run:
-
-```bash
-$ vagrant init drifty/ionic-android
-$ vagrant up
-```
-
-If you try this method and it works or you encounter issues, please comment on issue #7.
