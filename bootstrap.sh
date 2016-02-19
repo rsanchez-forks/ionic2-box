@@ -3,10 +3,10 @@
 ANDROID_SDK_FILENAME=android-sdk_r24.4.1-linux.tgz
 ANDROID_SDK=http://dl.google.com/android/$ANDROID_SDK_FILENAME
 
-#sudo apt-get install python-software-properties
-#sudo add-apt-repository ppa:webupd8team/java
 curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
 sudo apt-get update
+# update from Ubuntu 10.04.3 to 10.04.4 or newer LTS releases
+sudo apt-get -y dist-upgrade
 sudo apt-get install -y git openjdk-7-jdk ant expect nodejs
 # install 32-bit dependencies of Android build-tools
 sudo apt-get install -y lib32gcc1 libc6-i386 lib32z1 lib32stdc++6 lib32ncurses5 lib32gomp1 lib32z1-dev
