@@ -5,8 +5,10 @@ ANDROID_SDK=http://dl.google.com/android/$ANDROID_SDK_FILENAME
 
 #sudo apt-get install python-software-properties
 #sudo add-apt-repository ppa:webupd8team/java
-apt-get update
-apt-get install -y nodejs npm git openjdk-7-jdk ant expect
+curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
+sudo apt-get update
+sudo apt-get install -y git openjdk-7-jdk ant expect
+sudo apt-get install -y nodejs
 
 sudo ln -s /usr/bin/nodejs /usr/bin/node
 
@@ -19,13 +21,14 @@ echo "export JAVA_HOME=/usr/lib/jvm/java-7-openjdk-i386" >> /home/vagrant/.bashr
 echo "PATH=\$PATH:~/android-sdk-linux/tools:~/android-sdk-linux/platform-tools" >> /home/vagrant/.bashrc
 
 sudo npm install -g cordova ionic gulp bower
-# the following are missed dependencies
-sudo npm install -g bplist-parser xmlbuilder
+
 sudo chown -R vagrant /usr/local/lib/node_modules
 # allow to uninstall/reinstall ionic w/o root
 sudo chown -R vagrant /usr/local/bin/ionic
 
 #add gradle install here
+
+sudo apt-get autoremove
 
 expect -c '
 set timeout -1   ;
