@@ -5,13 +5,13 @@ I addressed issues with the outdated NodeJS packages in the official mainline Ub
 This box can be reached at localhost:2222 and authenticated with u/p vagrant/vangrant.
 
 Current versions:
+OS: Ubuntu 14.04.4 LTS
 Cordova CLI: 6.0.0
 Gulp version:  CLI version 3.9.1
 Gulp local:   Local version 3.9.1
 Ionic Version: 1.2.4
 Ionic CLI Version: 1.7.14
 Ionic App Lib Version: 0.7.0
-OS: Distributor ID:     Ubuntu Description:     Ubuntu 14.04.3 LTS
 Node Version: v4.3.1
 npm version: 2.14.12
 Java version: 1.7.0_95
