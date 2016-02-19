@@ -1,8 +1,21 @@
 This is a fork of the original Ionic Box project, aimed at updating package versions and addressing various dependency issues.
 
-I addressed issues with the outdated NodeJS packages in the official mainline Ubuntu repos, as well as a few other issues. These were causing npm dependency problems during and after provisioning. Using VirtualBox as the provider, I tested this as capable of vagrant up, generating an app with the tabs template, serving it to the host machine, and packaging an Android build.
+I addressed issues with the outdated NodeJS packages in the official mainline Ubuntu repos, as well as a few other issues. These were causing npm dependency problems during and after provisioning. Using VirtualBox as the provider, I tested this on Windows and Mac hosts as capable of vagrant up, generating an app with the tabs template, serving it to the host machine, and packaging an Android build.
 
+This box can be reached at localhost:2222 and authenticated with u/p vagrant/vangrant.
 
+Current versions:
+Cordova CLI: 6.0.0
+Gulp version:  CLI version 3.9.1
+Gulp local:   Local version 3.9.1
+Ionic Version: 1.2.4
+Ionic CLI Version: 1.7.14
+Ionic App Lib Version: 0.7.0
+OS: Distributor ID:     Ubuntu Description:     Ubuntu 14.04.3 LTS
+Node Version: v4.3.1
+npm version: 2.14.12
+Java version: 1.7.0_95
+adb version: 1.0.32
 
 Ionic Box
 =============================
