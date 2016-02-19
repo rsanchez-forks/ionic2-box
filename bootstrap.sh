@@ -8,7 +8,8 @@ ANDROID_SDK=http://dl.google.com/android/$ANDROID_SDK_FILENAME
 curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
 sudo apt-get update
 sudo apt-get install -y git openjdk-7-jdk ant expect nodejs
-
+# install 32-bit dependencies of Android build-tools
+sudo apt-get install -y lib32gcc1 libc6-i386 lib32z1 lib32stdc++6 lib32ncurses5 lib32gomp1 lib32z1-dev
 sudo ln -s /usr/bin/nodejs /usr/bin/node
 
 curl -O $ANDROID_SDK
@@ -32,7 +33,7 @@ sudo apt-get autoremove
 
 expect -c '
 set timeout -1   ;
-spawn /home/vagrant/android-sdk-linux/tools/android update sdk -u --all --filter platform-tool,android-22,android-23,build-tools-22.0.1
+spawn /home/vagrant/android-sdk-linux/tools/android update sdk -u --all --filter platform-tool,android-22,android-23,build-tools-22.0.1,build-tools-21.0.0
 expect { 
     "Do you accept the license" { exp_send "y\r" ; exp_continue }
     eof
