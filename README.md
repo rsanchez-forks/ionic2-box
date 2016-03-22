@@ -12,10 +12,10 @@ Gulp local:   Local version 3.9.1
 Ionic Version: 1.2.4
 Ionic CLI Version: 1.7.14
 Ionic App Lib Version: 0.7.0
-Node Version: v4.3.1
-npm version: 2.14.12
+Node Version: 4.4.0
+npm version: 2.14.20
 Java version: 1.7.0_95
-adb version: 1.0.32
+adb version: 1.0.35
 
 Ionic Box
 =============================
