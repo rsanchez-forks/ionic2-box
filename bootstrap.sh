@@ -3,8 +3,8 @@
 ANDROID_SDK_FILENAME=android-sdk_r24.4.1-linux.tgz
 ANDROID_SDK=http://dl.google.com/android/$ANDROID_SDK_FILENAME
 
-curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
-sudo apt-get update
+curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+sudo apt-get install -y nodejs
 # update from Ubuntu 10.04.3 to 10.04.4 or newer LTS releases
 sudo apt-get -y dist-upgrade
 sudo apt-get install -y git openjdk-7-jdk ant expect nodejs
