@@ -20,12 +20,17 @@ echo "ANDROID_HOME=~/android-sdk-linux" >> /home/vagrant/.bashrc
 echo "export JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64" >> /home/vagrant/.bashrc
 echo "PATH=\$PATH:~/android-sdk-linux/tools:~/android-sdk-linux/platform-tools" >> /home/vagrant/.bashrc
 
-sudo npm install -g cordova ionic@beta gulp bower typings
-# add gradle 2.2.1?
+sudo npm install -g  node-gyp
+sudo npm install -g  node-sass
+sudo npm install -g  gulp 
+sudo npm install -g  cordova 
+sudo npm install -g  bower 
+sudo npm install -g  typings
+sudo npm install -g  ionic@2.0.0-beta.37 
 
-sudo chown -R vagrant /usr/local/lib/node_modules
+sudo chown -R vagrant /usr/lib/node_modules
 # allow to uninstall/reinstall ionic w/o root
-sudo chown -R vagrant /usr/local/bin/ionic
+sudo chown -R vagrant /usr/bin/ionic
 
 #add gradle install here
 
