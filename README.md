@@ -20,7 +20,7 @@ npm version: 3.10
 Java version: 1.8
 adb version: 1.0.35
 
-Ionic Box
+Ionic 2  Box
 =============================
 
 Ionic Box is a ready-to-go hybrid development environment for building mobile apps with Ionic, Cordova, and Android. Ionic Box was built to make it easier for developers to build Android versions of their app, and especially for Windows users to get a complete dev environment set up without all the headaches.
