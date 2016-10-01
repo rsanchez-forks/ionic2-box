@@ -1,20 +1,23 @@
-This is a fork of a fork (SamClayton/ionic-box) of the original Ionic Box project, aimed at updating package versions and addressing various dependency issues. But for IONIC2
+This is a fork of a fork (SamClayton/ionic-box) of the original Ionic Box project, aimed at updating package versions and addressing various dependency issues. 
+And...
+for IONIC2  :)
 
-I addressed issues with the outdated NodeJS packages in the official mainline Ubuntu repos, as well as a few other issues. These were causing npm dependency problems during and after provisioning. Using VirtualBox as the provider, I tested this on Windows and Mac hosts as capable of vagrant up, generating an app with the tabs template, serving it to the host machine, and packaging an Android build.
+I addressed issues with the outdated NodeJS packages in the official mainline Ubuntu repos, as well as a few other issues. These were causing npm dependency problems during and after provisioning. Using VirtualBox as the provider, I tested this on Windows and Mac hosts as capable of vagrant up, generating an app with the tutorial template, serving it to the host machine, and packaging an Android build.
 
-This box can be reached at localhost:2222 and authenticated with u/p vagrant/vangrant.
+This box can be reached at localhost:2222 
+Authenticated with u/p vagrant/vangrant.
 
 Current versions:
-OS: Ubuntu 14.04.4 LTS
+OS: Ubuntu 16.04 LTS
 Cordova CLI: 6.0.0
 Gulp version:  CLI version 3.9.1
 Gulp local:   Local version 3.9.1
-Ionic Version: 1.2.4
-Ionic CLI Version: 1.7.14
+Ionic Version: 2.0-Beta.11
+Ionic CLI Version: 2.0-Beta.37
 Ionic App Lib Version: 0.7.0
-Node Version: 4.4.0
-npm version: 2.14.20
-Java version: 1.7.0_95
+Node Version: 6.7
+npm version: 3.10
+Java version: 1.8
 adb version: 1.0.35
 
 Ionic Box
